@@ -1,7 +1,7 @@
 library(leaflet)
 library(ShinyDash)
 require(magrittr)
-shinyUI(fluidPage( tags$head(tags$link(rel='stylesheet', type='text/css', href='styles.css')), titlePanel('Insektdatabasen - interface'),
+shinyUI(fluidPage( tags$head(tags$link(rel='stylesheet', type='text/css', href='styles.css')), titlePanel('Postgresql database - shiny interface'),
   
   fluidRow(column(8,leafletOutput("mymap")),
       column(2,offset=0,
